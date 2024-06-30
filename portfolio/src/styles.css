@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+body {
+  @apply bg-gradient-to-l from-gray-800 to-gray-900 min-h-screen font-raleway text-white;
+}
+
+/* Navbar Styles */
+nav {
+  @apply fixed top-0 w-full z-10 transition-all duration-300;
+}
+.navbar-transparent {
+  @apply bg-transparent;
+}
+.navbar-colored {
+  @apply bg-gradient-to-r from-purple-800 to-indigo-900 shadow-lg;
+}
+
+.main-content {
+  padding-top: 5rem; /* Adjust this value based on your navbar height */
+}
+
+/* Nav Item Styles */
+.nav-item .nav-underline {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a855f7; /* Purple color */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover .nav-underline,
+.nav-item a.active .nav-underline {
+  width: 100%;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-item a:hover {
+    border-bottom: 1px solid #a855f7;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #a855f7;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+  .nav-item a:hover::after,
+  .nav-item a.active::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/* Hero Section */
+
+/* Tailwind CSS classes are used in the component above, make sure to include Tailwind CSS in your project */
+/* Add animate.css for animations: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css */
+
+.hero-section {
+  background-color: #dec107; /* Dark gray background */
+  color: white; /* White text */
+  position: relative; /* Ensure relative positioning for z-index usage */
+}
+
+.bg-3d-animation {
+  position: absolute;
+  inset: 0;
+  z-index: -1; /* Behind content */
+  background: linear-gradient(135deg, rgba(219, 39, 119, 1) 0%, rgba(255, 104, 133, 1) 50%, rgba(255, 179, 91, 1) 100%);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0%, 100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-title {
+  font-size: 2.5rem; /* Initial font size */
+  font-family: 'Roboto', sans-serif; /* Initial font family */
+  transition: font-size 0.3s ease-in-out, font-family 0.3s ease-in-out; /* Smooth transition */
+}
+
+.hero-subtitle {
+  font-size: 1.25rem; /* Responsive font size */
+}
+
+.skills-icons {
+  margin-top: 2rem; /* Spacing */
+}
+
+.skill-icon {
+  transition: transform 0.3s ease-in-out; /* Smooth icon transition */
+}
+
+.skill-icon:hover {
+  transform: scale(1.2); /* Hover scale effect */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #6b46c1; /* Purple border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.social-icons {
+  margin-top: 2rem; /* Spacing */
+}
+
+.social-icons a {
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Custom shape divider */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.custom-shape-divider-bottom-1630849734 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630849734 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 132px;
+}
+
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+.home-header {
+  padding-top: 80px !important;
+}
+
+.home-section {
+  position: relative;
+  z-index: 1;
+  background-image: var(--image-gradient), url(./assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem; /* Larger font size on medium screens and above */
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem; /* Larger font size on medium screens and above */
+  }
+
+  .profile-img {
+    width: 192px;
+    height: 192px; /* Larger profile image on medium screens and above */
+  }
+}
+

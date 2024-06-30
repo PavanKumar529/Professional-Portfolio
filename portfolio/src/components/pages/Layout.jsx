@@ -1,16 +1,23 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Projects from "./Projects.jsx";
+import Resume from "./Resume";
+import ContactUs from "./ContactUs.jsx";
 
-
-const Header = () => {
+const Layout = () => {
   return (
-    <div className='text-3xl font-bold underline'>
-      <h1>Hello, I am Layout of the website</h1>
-
-      
-      <Outlet/>
+    <div className="main-content text-3xl font-bold">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="contact" element={<ContactUs />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Layout;
