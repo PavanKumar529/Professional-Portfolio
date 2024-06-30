@@ -1,14 +1,25 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const dbConnect = require("./config/dbConnect");
-const userModel = require("./models/userModel"); // Correct path to userModel
-const PORT = process.env.PORT || 8000;
-const hostName = process.env.HOST_NAME || '127.0.0.8';
+const userModel = require("./models/userModel"); 
+
 
 // Middleware configuration
 dotenv.config(); // Load environment variables from .env file
+
+const PORT = process.env.PORT || 1000;
+const hostName = process.env.HOST_NAME || '127.0.0.1';
+
+const cors = require("cors");
+
+
+
 const app = express();
+
 app.use(express.json()); // Middleware to parse JSON bodies
+
+// Configure CORS middleware
+app.use(cors())
 
 // Database connection
 dbConnect(); // Ensure dbConnect() function is correctly establishing the database connection
@@ -20,7 +31,7 @@ app.get("/", (req, res) => {
 
 app.post("/register", async (req, res) => {
     try {
-        console.log("Incoming request:", req.body);
+        // console.log("Incoming request:", req.body);
         const { name, email, mobileNumber, description } = req.body; // Destructure fields from req.body
 
         // Check if all required fields are present
@@ -31,7 +42,7 @@ app.post("/register", async (req, res) => {
         // Check if the email already exists in the database
         const existingUser = await userModel.findOne({ email });
         if (existingUser) {
-            return res.status(400).send("User Already Exists, Please Login");
+            return res.status(400).json( {message: "User Already Registered", success: false});
         }
 
         // Create new user object
@@ -44,10 +55,10 @@ app.post("/register", async (req, res) => {
 
         // Save user to the database
         await newUserData.save();
-        res.status(201).send("Registered Successfully, Data stored in DB");
+        res.status(201).json({ message:"Registered Successfully", success: true} );
     } catch (err) {
         console.error("Error while storing data in DB:", err);
-        res.status(500).send("Error while Storing data in DB");
+        res.status(500).json({ message: "Error while Storing data in DB", success: false });
     }
 });
 
