@@ -23,31 +23,29 @@ function ProjectCards(props) {
           {props.isBlog ? "Blog" : "Project"}
         </div>
       </div>
-      <div className="px-6 py-4 h-40 flex flex-col justify-between">
-        <div>
-          <div className="font-bold text-xl mb-2">{props.title}</div>
-          <p className="text-gray-700 text-base">{props.description}</p>
-        </div>
-        <div className="mt-4 flex justify-between items-center">
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{props.title}</div>
+        <p className="text-gray-700 text-base">{props.description}</p>
+      </div>
+      <div className="px-6 py-4">
+        <a
+          href={props.ghLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+        >
+          <BsGithub className="mr-2" /> {props.isBlog ? "View Blog" : "GitHub"}
+        </a>
+        {!props.isBlog && props.demoLink && (
           <a
-            href={props.ghLink}
+            href={props.demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-2 inline-flex items-center"
           >
-            <BsGithub className="mr-2" /> {props.isBlog ? "View Blog" : "GitHub"}
+            <CgWebsite className="mr-2" /> Demo
           </a>
-          {!props.isBlog && props.demoLink && (
-            <a
-              href={props.demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
-            >
-              <CgWebsite className="mr-2" /> Demo
-            </a>
-          )}
-        </div>
+        )}
       </div>
     </ParallaxTilt>
   );

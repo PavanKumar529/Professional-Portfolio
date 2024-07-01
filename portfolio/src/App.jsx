@@ -8,6 +8,7 @@ import About from "./components/pages/About.jsx";
 import Projects from "./components/pages/Projects/Projects";
 import Resume from "./components/pages/Resume";
 import ContactUs from "./components/pages/ContactUs.jsx";
+import Footer from "./components/Footer.jsx"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Projects/>
       <Resume/>
       <ContactUs/> */}
+      <Footer/>
 
     </div>
   );
