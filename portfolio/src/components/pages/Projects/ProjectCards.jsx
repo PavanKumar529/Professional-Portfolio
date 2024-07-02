@@ -19,13 +19,14 @@ function ProjectCards(props) {
           src={props.imgPath}
           alt={props.title}
         />
-        <div className="absolute top-0 left-0 m-2 bg-gray-800 bg-opacity-60 text-white px-2 py-1 rounded">
-          {props.isBlog ? "Blog" : "Project"}
-        </div>
+        {/* <div className="absolute top-0 left-0 m-2 bg-gray-800 bg-opacity-60 text-white px-2 py-1 rounded"> */}
+          {/* {props.isBlog ? "Blog" : "Project"} */}
+          {/* <div className="text-gray-100 font-bold text-xl mb-2">{props.title}</div> */}
+        {/* </div> */}
       </div>
       
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{props.title}</div>
+        <div className="text-center text-gray-700 font-bold text-xl mb-2">{props.title}</div>
         <p className="text-gray-700 text-base">{props.description}</p>
       </div>
       

@@ -5,8 +5,8 @@ import Particle from "../Particle";
 import ThreeDAnimation from "./Animation";
 import leaf from "../../../assets/home-bg.jpg";
 import emotion from "../../../assets/home-bg.jpg";
-import editor from "../../../assets/home-bg.jpg";
-import chatify from "../../../assets/home-bg.jpg";
+import editor from "../../../assets/Professional-Portfolio.png";
+import chatify from "../../../assets/Food-Del-App.png";
 import suicide from "../../../assets/home-bg.jpg";
 import bitsOfCode from "../../../assets/home-bg.jpg";
 
@@ -21,7 +21,7 @@ function Projects() {
         <p className="text-center mb-8">
           Here are a few projects I've worked on recently.
         </p>
-        <Row className="flex flex-wrap justify-center gap-6">
+        <Row className="flex flex-wrap justify-center gap-16">
           <Col className="flex justify-center">
             <ProjectCards
               imgPath={chatify}
@@ -32,31 +32,34 @@ function Projects() {
               demoLink="https://"
             />
           </Col>
+
+          <Col className="flex justify-center">
+            <ProjectCards
+              imgPath={editor}
+              isBlog={false}
+              title="MERN Stack Portfolio"
+              description="An online code and markdown editor built with React.js, supporting real-time editing and previewing of HTML, CSS, and JavaScript."
+              ghLink="https://github.com/"
+              demoLink="https://editor-io-demo.com/"
+            />
+          </Col>
+
           <Col className="flex justify-center">
             <ProjectCards
               imgPath={bitsOfCode}
               isBlog={false}
               title="Resume Builder"
               description="A robust web application that allows users to build professional resumes with ease, featuring customizable templates and real-time previews."
-              ghLink="https://github.com/"
+              ghLink="https://github.com/PavanKumar529/Resume_Builder"
               demoLink="https://resume-builder-demo.com/"
             />
           </Col>
-          <Col className="flex justify-center">
-            <ProjectCards
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="An online code and markdown editor built with React.js, supporting real-time editing and previewing of HTML, CSS, and JavaScript."
-              ghLink="https://github.com/"
-              demoLink="https://editor-io-demo.com/"
-            />
-          </Col>
+
           <Col className="flex justify-center">
             <ProjectCards
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
+              title="Project 4"
               description="A machine learning model trained with PyTorch to classify plant diseases from images, achieving high accuracy with ResNet34."
               ghLink="https://github.com/"
               demoLink="https://plant-ai-demo.com/"
@@ -66,7 +69,7 @@ function Projects() {
             <ProjectCards
               imgPath={suicide}
               isBlog={false}
-              title="AI for Social Good"
+              title="Project 5"
               description="A Natural Language Processing project aimed at detecting suicide-related posts on social media to aid in suicide prevention efforts."
               ghLink="https://github.com/"
             />
@@ -75,7 +78,7 @@ function Projects() {
             <ProjectCards
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="To do Manager"
               description="A convolutional neural network classifier trained to detect human emotions from facial expressions using the FER-2013 dataset."
               ghLink="https://github.com/"
             />

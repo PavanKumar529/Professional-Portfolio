@@ -1,8 +1,8 @@
 import React from "react";
-import Particle from "./Particle";
+import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import homeLogo from "../../assets/Pavan.png";
+import homeLogo from "../../../assets/Pavan.png";
 
 function Home() {
   return (
@@ -21,7 +21,7 @@ function Home() {
                 </span>
               </h1>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                I'M
+                I'm
                 <span className="text-purple-400"> Pavan Kumar Kuruva</span>
               </h1>
               <div className="py-4">

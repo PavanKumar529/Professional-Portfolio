@@ -1,9 +1,8 @@
 import React from "react";
-import "./App.css"
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
 import Layout from "./components/pages/Layout.jsx";
-import Home from "./components/pages/Home.jsx";
+import Home from "./components/pages/Home/Home.jsx";
 import About from "./components/pages/About/About.jsx";
 import Projects from "./components/pages/Projects/Projects";
 import Resume from "./components/pages/Resume";

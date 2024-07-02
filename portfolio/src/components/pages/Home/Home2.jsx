@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../../assets/Pavan.png";
+import myImg from "../../../assets/Pavan.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -20,7 +20,7 @@ function Home2() {
               <br />
               <br />
               I am fluent in classics like
-              <span className="font-bold text-purple-400"> C++, Javascript, and Go. </span>
+              <span className="font-bold text-purple-400"> Javascript. </span>
               <br />
               <br />
               My fields of interest are building new{" "}
@@ -32,7 +32,7 @@ function Home2() {
               Whenever possible, I also apply my passion for developing products
               with <span className="font-bold text-purple-400">Node.js</span> and
               <span className="font-bold text-purple-400"> Modern Javascript Library and Frameworks </span>
-              like <span className="font-bold text-purple-400">React.js and Next.js</span>.
+              like <span className="font-bold text-purple-400">React.js, React Native and Next.js</span>.
             </p>
           </div>
           
@@ -44,6 +44,7 @@ function Home2() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-400 transition duration-300 cursor-pointer"
+                  title="GitHub"
                 >
                   <AiFillGithub className="text-3xl" />
                 </a>
@@ -51,10 +52,11 @@ function Home2() {
 
               <li className="mr-4">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/pavan-kumar529/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-400 transition duration-300 cursor-pointer"
+                  title="LinkedIn"
                 >
                   <FaLinkedinIn className="text-3xl" />
                 </a>
