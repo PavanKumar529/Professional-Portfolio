@@ -2,16 +2,14 @@ const express = require("express");
 const dotenv = require("dotenv");
 const dbConnect = require("./config/dbConnect");
 const userModel = require("./models/userModel"); 
+const cors = require("cors");
 
 
 // Middleware configuration
 dotenv.config(); // Load environment variables from .env file
 
 const PORT = process.env.PORT || 1000;
-const hostName = process.env.HOST_NAME || '127.0.0.1';
-
-const cors = require("cors");
-
+const hostName = process.env.HOST_NAME || '0.0.0.0';   // Bind to all interfaces
 
 
 const app = express();
