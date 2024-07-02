@@ -17,16 +17,18 @@ function ProjectCards(props) {
         <img
           className="w-full h-56 object-cover rounded-t"
           src={props.imgPath}
-          alt="Project"
+          alt={props.title}
         />
         <div className="absolute top-0 left-0 m-2 bg-gray-800 bg-opacity-60 text-white px-2 py-1 rounded">
           {props.isBlog ? "Blog" : "Project"}
         </div>
       </div>
+      
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{props.title}</div>
         <p className="text-gray-700 text-base">{props.description}</p>
       </div>
+      
       <div className="px-6 py-4">
         <a
           href={props.ghLink}

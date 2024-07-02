@@ -26,9 +26,9 @@ function Projects() {
             <ProjectCards
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase."
-              ghLink="https://github.com/"
+              title="Food Delivery Application"
+              description="A dynamic MERN stack project showcasing seamless food ordering, real-time tracking, and secure payments with Stripe integration, highlighting my skills in front-end and back-end development."
+              ghLink="https://github.com/PavanKumar529/MERN-Full-Stack-Food-Delivery-Website/"
               demoLink="https://"
             />
           </Col>
@@ -36,10 +36,10 @@ function Projects() {
             <ProjectCards
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind CSS."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs/"
+              title="Resume Builder"
+              description="A robust web application that allows users to build professional resumes with ease, featuring customizable templates and real-time previews."
+              ghLink="https://github.com/"
+              demoLink="https://resume-builder-demo.com/"
             />
           </Col>
           <Col className="flex justify-center">
@@ -47,9 +47,9 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Editor.io"
-              description="Online code and markdown editor build with react.js."
+              description="An online code and markdown editor built with React.js, supporting real-time editing and previewing of HTML, CSS, and JavaScript."
               ghLink="https://github.com/"
-              demoLink="https:/"
+              demoLink="https://editor-io-demo.com/"
             />
           </Col>
           <Col className="flex justify-center">
@@ -57,17 +57,17 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifier model using 'PyTorch'."
+              description="A machine learning model trained with PyTorch to classify plant diseases from images, achieving high accuracy with ResNet34."
               ghLink="https://github.com/"
-              demoLink="/"
+              demoLink="https://plant-ai-demo.com/"
             />
           </Col>
           <Col className="flex justify-center">
             <ProjectCards
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Language Processing' for the detection of suicide-related posts."
+              title="AI for Social Good"
+              description="A Natural Language Processing project aimed at detecting suicide-related posts on social media to aid in suicide prevention efforts."
               ghLink="https://github.com/"
             />
           </Col>
@@ -76,7 +76,7 @@ function Projects() {
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backend."
+              description="A convolutional neural network classifier trained to detect human emotions from facial expressions using the FER-2013 dataset."
               ghLink="https://github.com/"
             />
           </Col>

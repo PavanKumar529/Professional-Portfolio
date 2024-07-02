@@ -243,3 +243,37 @@ nav {
   justify-content: space-between;
   height: 100%;
 }
+
+
+
+
+/* About Section */
+.tech-icons {
+  transition: transform 0.2s;
+}
+
+.tech-icons:hover {
+  transform: scale(1.1);
+}
+
+body {
+  /* background-color: #0d0d0d; */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* section {
+  background-color: #0d0d0d;
+} */
+/* 
+.border-purple-400 {
+  border-color: #9b59b6;
+}
+
+.text-purple-400 {
+  color: #9b59b6;
+}
+
+.hover\:bg-purple-900:hover {
+  background-color: #5b2c6f;
+} */

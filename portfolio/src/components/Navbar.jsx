@@ -29,10 +29,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`transition-all duration-300 px-40 ${navColor ? "navbar-colored" : "navbar-transparent"}`}>
+    <nav className={`transition-all duration-300 px-30 ${navColor ? "navbar-colored" : "navbar-transparent"}`}>
       <div className="container mx-auto flex items-center justify-between py-2 md:py-4">
         <NavLink to="/" className="flex items-center">
-          <img src={logo} className="h-15 w-16 hover:scale-110 transition-transform duration-300" alt="brand" />
+          <img src={logo} className="h-14 w-14 hover:scale-110 transition-transform duration-300" alt="brand" />
         </NavLink>
         <button className="md:hidden text-white focus:outline-none" onClick={toggleNavbar}>
           <div className="space-y-2">
@@ -46,7 +46,8 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/"
-                className={({ isActive }) => `text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300 ${isActive ? "font-bold" : ""}`}
+                className="text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300"
+                activeClassName="font-bold"
                 onClick={() => setExpanded(false)}
               >
                 <AiOutlineHome className="inline-block mb-1" /> Home
@@ -56,7 +57,8 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/about"
-                className={({ isActive }) => `text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300 ${isActive ? "font-bold" : ""}`}
+                className="text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300"
+                activeClassName="font-bold"
                 onClick={() => setExpanded(false)}
               >
                 <AiOutlineUser className="inline-block mb-1" /> About
@@ -66,7 +68,8 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/projects"
-                className={({ isActive }) => `text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300 ${isActive ? "font-bold" : ""}`}
+                className="text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300"
+                activeClassName="font-bold"
                 onClick={() => setExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen className="inline-block mb-1" /> Projects
@@ -76,7 +79,8 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/resume"
-                className={({ isActive }) => `text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300 ${isActive ? "font-bold" : ""}`}
+                className="text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300"
+                activeClassName="font-bold"
                 onClick={() => setExpanded(false)}
               >
                 <CgFileDocument className="inline-block mb-1" /> Resume
@@ -86,7 +90,8 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 to="/contact"
-                className={({ isActive }) => `text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300 ${isActive ? "font-bold" : ""}`}
+                className="text-white px-3 py-2 block relative hover:text-purple-400 transition-all duration-300"
+                activeClassName="font-bold"
                 onClick={() => setExpanded(false)}
               >
                 <AiOutlineUser className="inline-block mb-1" /> Contact Us

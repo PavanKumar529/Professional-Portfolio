@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home.jsx";
-import About from "./About.jsx";
+import About from "./About/About.jsx";
 import Projects from "./Projects/Projects.jsx";
 import Resume from "./Resume";
 import ContactUs from "./ContactUs.jsx";
