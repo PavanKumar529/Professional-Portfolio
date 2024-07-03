@@ -98,7 +98,7 @@ const Navbar = () => {
                 <div className="nav-underline"></div>
               </NavLink>
             </li>
-            <li className="nav-item">
+{/*             <li className="nav-item">
               <a
                 href="https://github.com/PavanKumar529/Professional-Portfolio"
                 target="_blank"
@@ -106,7 +106,7 @@ const Navbar = () => {
               >
                 <CgGitFork className="inline-block mb-1 text-lg" /> <AiFillStar className="inline-block text-lg" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
