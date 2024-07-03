@@ -9,7 +9,7 @@ const cors = require("cors");
 dotenv.config(); // Load environment variables from .env file
 
 const PORT = process.env.PORT || 1000;
-const hostName = process.env.HOST_NAME || '127.0.0.1';
+const hostName = process.env.HOST_NAME || '0.0.0.0';
 
 
 const app = express();
