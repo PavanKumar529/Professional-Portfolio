@@ -6,7 +6,7 @@ import ThreeDAnimation from "./Animation";
 import Food_Del_App from "../../../assets/Food-Del-App.png";
 import Portfolio from "../../../assets/Professional-Portfolio.png";
 import Resume_Builder from "../../../assets/home-bg.jpg";
-import Weather_App from "../../../assets/home-bg.jpg";
+import Weather_App from "../../../assets/Weather-App.png";
 import E_Commerce from "../../../assets/home-bg.jpg";
 import ToDo from "../../../assets/home-bg.jpg";
 
@@ -40,7 +40,7 @@ function Projects() {
               title="MERN Stack Portfolio"
               description="Dynamic MERN portfolio showcasing proficiency in React, Node.js, and MongoDB. Features interactive elements and modern design for an engaging user experience."
               ghLink="https://github.com/"
-              demoLink="https://editor-io-demo.com/"
+              demoLink=""
             />
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
               title="Resume Builder"
               description="Resume Builder leveraging MERN Stack technology for dynamic creation and customization of professional resumes. Seamlessly integrates MongoDB, Express.js, React.js, and Node.js to empower users in crafting personalized CVs with ease."
               ghLink="https://github.com/PavanKumar529/Resume_Builder"
-              demoLink="https://resume-builder-demo.com/"
+              demoLink=""
             />
           </Col>
 
@@ -62,7 +62,7 @@ function Projects() {
               title="Weather Application"
               description="Dynamic Weather App built with React, fetching real-time weather data from OpenWeatherMap API. Provides accurate weather forecasts and intuitive user interface for seamless navigation and information retrieval."
               ghLink="https://github.com/"
-              demoLink="https://plant-ai-demo.com/"
+              demoLink=""
             />
           </Col>
           <Col className="flex justify-center">

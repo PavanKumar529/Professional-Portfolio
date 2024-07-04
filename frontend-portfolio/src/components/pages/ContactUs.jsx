@@ -80,7 +80,7 @@ const ContactUs = () => {
     }
 
     try {
-      const response = await axios.post('https://professional-portfolio-40e3.onrender.com//register', formData);
+      const response = await axios.post('https://professional-portfolio-40e3.onrender.com/register', formData);
       if (response.data.success) {
         setStatusMessage('Message sent successfully!');
         setFormData(initialFormData); // Clear form fields

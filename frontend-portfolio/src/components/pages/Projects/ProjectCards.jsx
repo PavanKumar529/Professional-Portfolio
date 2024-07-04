@@ -15,7 +15,7 @@ function ProjectCards(props) {
     >
       <div className="relative">
         <img
-          className="w-full h-56 object-cover rounded-t"
+          className="w-full h-60 object-cover rounded-t"
           src={props.imgPath}
           alt={props.title}
         />
