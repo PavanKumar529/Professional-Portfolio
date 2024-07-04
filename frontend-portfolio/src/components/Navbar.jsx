@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`transition-all duration-300 px-30 ${navColor ? "navbar-colored" : "navbar-transparent"}`}>
+    <nav className={`transition-all duration-300 px-40 ${navColor ? "navbar-colored" : "navbar-transparent"}`}>
       <div className="container mx-auto flex items-center justify-between py-2 md:py-4">
         <NavLink to="/" className="flex items-center">
           <img src={logo} className="h-14 w-14 hover:scale-110 transition-transform duration-300" alt="brand" />

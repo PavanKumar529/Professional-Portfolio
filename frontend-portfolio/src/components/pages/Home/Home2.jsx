@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Home2() {
   return (
     <section className="from-purple-500 py-10 min-h-screen">
-      <div className="container mx-auto px-4 md:px-12 lg:px-24 min-h-screen flex flex-wrap items-center">
+      <div className="container mx-auto md:px-12 lg:px-24 min-h-screen flex flex-wrap items-center">
         <div className="w-full md:w-1/2 lg:w-3/5 md:order-2">
           <div className="p-4 md:p-8">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -36,7 +36,7 @@ function Home2() {
             </p>
           </div>
           
-          <div className="text-center md:text-left">
+          {/* <div className="text-center md:text-left">
             <ul className="flex justify-center md:justify-start">
               <li className="mr-4">
                 <a
@@ -62,10 +62,10 @@ function Home2() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="w-full md:w-1/2 lg:w-2/5 md:order-1 mb-8 md:mb-0">
-          <div className="my-4 md:my-0 mx-auto max-w-xs md:max-w-full">
+          <div className="my-4 md:my-0 mx-auto max-w-[250px] md:max-w-[300px]">
             <Tilt>
               <img src={myImg} className="mx-auto" alt="avatar" />
             </Tilt>

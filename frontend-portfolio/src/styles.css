@@ -20,14 +20,14 @@ nav {
 }
 
 /* Nav Item Styles */
-.nav-item .nav-underline {
+.nav-item .nav {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #a855f7; /* Purple color */
+  background-color: #a855f7; 
   transition: width 0.3s ease-in-out;
 }
 
@@ -58,6 +58,29 @@ nav {
   }
 }
 
+.resume-btn, .contact-btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.resume-btn:hover, .contact-btn:hover {
+  color: #a993fe;
+  background: #000;
+  outline: 1.5px solid #a993fe;
+}
+
 @media (min-width: 769px) {
   .nav-item a::after {
     content: '';
@@ -78,9 +101,6 @@ nav {
 }
 
 /* Hero Section */
-
-/* Tailwind CSS classes are used in the component above, make sure to include Tailwind CSS in your project */
-/* Add animate.css for animations: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css */
 
 .hero-section {
   background-color: #dec107; /* Dark gray background */
@@ -234,8 +254,6 @@ nav {
   }
 }
 
-
-
 /* Custom styles for project cards */
 .project-card {
   display: flex;
@@ -243,9 +261,6 @@ nav {
   justify-content: space-between;
   height: 100%;
 }
-
-
-
 
 /* About Section */
 .tech-icons {
@@ -257,23 +272,46 @@ nav {
 }
 
 body {
-  /* background-color: #0d0d0d; */
   color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
 
-/* section {
-  background-color: #0d0d0d;
-} */
-/* 
-.border-purple-400 {
-  border-color: #9b59b6;
+
+
+
+/* Buttons Styles */
+.resume-btn, .hire-btn {
+  @apply bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300;
+  margin-right: 0.5rem;
 }
 
-.text-purple-400 {
-  color: #9b59b6;
+.resume-btn:hover, .hire-btn:hover {
+  @apply bg-indigo-700;
 }
 
-.hover\:bg-purple-900:hover {
-  background-color: #5b2c6f;
-} */
+/* Form Styles */
+.hire-form-container {
+  @apply fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50;
+}
+
+.hire-form {
+  @apply bg-white rounded-lg p-8 shadow-lg text-black;
+  max-width: 500px;
+  width: 100%;
+}
+
+.hire-form h2 {
+  @apply text-2xl font-bold mb-4;
+}
+
+.hire-form input, .hire-form textarea {
+  @apply w-full p-2 mb-4 border border-gray-300 rounded;
+}
+
+.hire-form button {
+  @apply bg-indigo-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300;
+}
+
+.hire-form button:hover {
+  @apply bg-indigo-700;
+}
